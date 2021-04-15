@@ -154,6 +154,7 @@ a.header_signup {
     background-color: #DEEBFF;
     border-radius: 2em;
     padding: 0.7em;
+    z-index: 100;
 }
 
 .filter_name {
@@ -163,6 +164,12 @@ a.header_signup {
     border: solid 1px #F2F2F2;
     border-radius: 1.6em;
     padding: 0.8em 1em 0.8em 3.6em;
+}
+
+.filter_name:hover {
+    color: white;
+    background-color: #0065FC;
+    border: solid 1px #0065FC;
 }
 
 /* RESULTAT */
@@ -186,4 +193,66 @@ a.header_signup {
     border-radius: 2em;
     padding: 0.4em;
     margin-right: 10px;
+}
+
+/***********/
+/* HOSTING */
+/***********/
+
+.hosting {
+    margin-top: 20px;
+    padding: 30px;
+    background-color: #F2F2F2;
+    border-radius: 1em;
+}
+
+.hosting_stickers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hosting_sticker {
+    margin-top: 30px;
+    background-color: white;
+    box-shadow: 0 0 10px grey;
+    padding: 5px;
+    border-radius: 1em;
+    width: 30%;
+}
+
+.hosting_sticker_picture {
+    width: 100%;
+    height: 10em;
+    object-fit: cover;
+    border-radius: 0.8em 0.8em 0 0;
+}
+
+.hosting_sticker_title, .hosting_sticker_price {
+    padding: 5px 0 0 5px;
+}
+
+.stars {
+    padding: 5px 0 5px 5px;
+    font-size: 0.7em;
+    color: #F2F2F2;
+}
+
+.blue {
+    color: #0065FC;
+}
+
+.hosting_footer {
+    margin-top: 30px;
+}
+
+/***********/
+/* ACTIVITY */
+/***********/
+
+.activity {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #F2F2F2;
+    border-radius: 1em;
 }
