@@ -158,7 +158,7 @@ a.header_signup {
 }
 
 .filter_name {
-    margin: 0 20px 0 -2.9em;
+    margin: 0 20px 0 -2.8em;
     font-size: 0.8em;
     font-weight: 900;
     border: solid 1px #F2F2F2;
@@ -195,15 +195,27 @@ a.header_signup {
     margin-right: 10px;
 }
 
-/***********/
-/* HOSTING */
-/***********/
+/************************************/
+/* CONTENEUR HEBERGEMENT+POPULAIRES */
+/************************************/
+
+.hp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+/***************/
+/* HEBERGEMENT */
+/***************/
 
 .hosting {
     margin-top: 20px;
     padding: 30px;
     background-color: #F2F2F2;
     border-radius: 1em;
+    width: 60%;
 }
 
 .hosting_stickers {
@@ -223,7 +235,7 @@ a.header_signup {
 
 .hosting_sticker_picture {
     width: 100%;
-    height: 10em;
+    height: 8em;
     object-fit: cover;
     border-radius: 0.8em 0.8em 0 0;
 }
@@ -244,6 +256,51 @@ a.header_signup {
 
 .hosting_footer {
     margin-top: 30px;
+}
+
+/**************/
+/* POPULAIRES */
+/**************/
+
+.popular {
+    margin-top: 20px;
+    padding: 30px;
+    background-color: #F2F2F2;
+    border-radius: 1em;
+    width: 25%;
+}
+
+.popular_stickers {
+    display: flex;
+    flex-direction: column;
+}
+
+.popular_sticker {
+    margin-top: 30px;
+    background-color: white;
+    box-shadow: 0 0 10px grey;
+    padding: 5px;
+    border-radius: 1em;
+    height: 8em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.popular_sticker_picture {
+    width: 35%;
+    height: 8em;
+    object-fit: cover;
+    border-radius: 0.8em 0 0 0.8em;
+}
+
+.popular_sticker_text {
+    width: 55%;
+    padding: 10px;
+}
+
+.popular_sticker_title, .popular_sticker_price {
+    padding: 5px;
 }
 
 /***********/
