@@ -27,6 +27,9 @@ a, a:hover, a:active, a:visited {
 
 body {
     font-family: Raleway, Arial, sans-serif;
+}
+
+section {
     width: 90%;
     margin: auto;
 }
@@ -74,7 +77,8 @@ p {
 /***********/
 
 header {
-    margin-top: 2px;
+    width: 90%;
+    margin: 2px auto 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -105,10 +109,6 @@ a.header_signup {
     font-size: 0.8em;
     font-weight: bold;
     padding: 20px 20px;
-}
-
-.header_signup:hover {
-    color:#0065FC;
 }
 
 /***********************/
@@ -190,7 +190,9 @@ a.header_signup {
     border: solid 1px #0065FC;
 }
 
+/************/
 /* RESULTAT */
+/************/
 
 .result {
     margin-top: 20px;
@@ -218,6 +220,8 @@ a.header_signup {
 /************************************/
 
 .hp {
+    width: 90%;
+    margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -248,7 +252,7 @@ a.header_signup {
     box-shadow: 0 0 10px grey;
     padding: 5px;
     border-radius: 1em;
-    width: 30%;
+    width: 29%;
 }
 
 .hosting_sticker_picture {
@@ -261,7 +265,6 @@ a.header_signup {
 .hosting_sticker_title, .hosting_sticker_price {
     padding: 0 5px;
 }
-
 
 .hosting_footer {
     margin-top: 30px;
@@ -305,7 +308,10 @@ a.header_signup {
 
 .popular_sticker_text {
     width: 55%;
-    padding: 10px;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .popular_sticker_title, .popular_sticker_price {
@@ -327,7 +333,8 @@ a.header_signup {
 
 footer {
     margin-top: 20px;
-    padding: 30px;
+    width: 100%;
+    padding: 5%;
     background-color: #F2F2F2;
     display: flex;
     flex-wrap: wrap;
