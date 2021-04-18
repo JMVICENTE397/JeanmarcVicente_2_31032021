@@ -248,10 +248,14 @@ a.header_signup {
 .hosting_sticker {
     margin-top: 30px;
     background-color: white;
-    box-shadow: 0 0 10px grey;
+    box-shadow: 0 0 5px grey;
     padding: 5px;
     border-radius: 1em;
     width: 29%;
+}
+
+.hosting_sticker:hover {
+    box-shadow: 0 0 10px black;
 }
 
 .hosting_sticker_picture {
@@ -294,13 +298,17 @@ a.header_signup {
 .popular_sticker {
     margin-top: 30px;
     background-color: white;
-    box-shadow: 0 0 10px grey;
+    box-shadow: 0 0 5px grey;
     padding: 5px;
     border-radius: 1em;
     height: 8em;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+}
+
+.popular_sticker:hover {
+    box-shadow: black 0 0 10px;
 }
 
 .popular_sticker_picture {
