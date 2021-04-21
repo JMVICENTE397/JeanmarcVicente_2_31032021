@@ -14,7 +14,7 @@ integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg
        
         <!-- En-tête avec logo, menu de navigation et bouton d'inscription -->
         <header>
-            <img src="/images/logo/reservia.svg" alt="Logo Reservia">
+            <img src="/images/logo/reservia.svg" alt="Logo Reservia" class="header_logo">
             <div class="header_nav_signup">
                 <nav>
                     <a href="#hebergements" class="header_nav">Hébergements</a>
@@ -23,6 +23,11 @@ integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg
                 <a href="#" class="header_signup">S'inscrire</a>
             </div>
         </header>
+        <nav class="mobile">
+            <a href="#hebergements" class="nav_mobile">Hébergements</a>
+            <a href="#activites" class="nav_mobile">Activités</a>
+        </nav>
+
 
         <!-- Corps de la page -->
         <main>
@@ -38,10 +43,11 @@ integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg
                         <i class="search_icon fas fa-map-marker-alt"></i>
                         <input class="search_input" type="text" placeholder="Marseille, France" />
                         <button class="search_button">Rechercher</button>
+                        <button class="search_button_mobile"><i class="loop fas fa-search"></i></button>
                     </form>
                 </div>
                 <div class="filters">
-                    <h3>Filtres</h3>
+                    <h3 class="filters_title">Filtres</h3>
                     <div class="filter">
                         <div class="filter_icon"><i class="fas fa-money-bill-wave"></i></div>
                         <div class="filter_name">Economique</div>
