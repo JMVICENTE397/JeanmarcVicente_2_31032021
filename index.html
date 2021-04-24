@@ -14,20 +14,23 @@ integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg
        
         <!-- En-tête avec logo, menu de navigation et bouton d'inscription -->
         <header>
-            <img src="/images/logo/reservia.svg" alt="Logo Reservia" class="header_logo">
-            <div class="header_nav_signup">
-                <nav>
-                    <a href="#hebergements" class="header_nav">Hébergements</a>
-                    <a href="#activites" class="header_nav">Activités</a>
-                </nav>
-                <a href="#" class="header_signup">S'inscrire</a>
-            </div>
+            <img src="./images/logo/reservia.svg" alt="Logo Reservia" class="header_logo">
+            <div class="header_blank"></div>
+            <nav>
+                <ul>
+                    <li class="header_li"><a href="#hebergements">Hébergements</a></li>
+                    <li class="header_li"><a href="#activites">Activités</a></li>
+                </ul>
+            </nav>
+            <a href="#" class="header_signup">S'inscrire</a>
         </header>
+
+        <!-- Duplication de HTML interdite
         <nav class="mobile">
             <a href="#hebergements" class="nav_mobile">Hébergements</a>
             <a href="#activites" class="nav_mobile">Activités</a>
         </nav>
-
+        -->
 
         <!-- Corps de la page -->
         <main>
@@ -240,60 +243,66 @@ integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg
             <!-- Activités -->
             <section class="activity">
             <h2>Activités à Marseille</h2>
-            <div class="activity_stickers">
-                
-                <div class="activity_sticker">
-                    <a href="#">
-                        <figure>
-                            <img class="activity_sticker_picture1" src="/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port"/>
-                            <figcaption class="activity_sticker_title">Vieux Port</figcaption>  
-                        </figure>
-                    </a>
+            <div class="activity_row">
+
+                <div class="activity_column">
+                    <div class="activity_sticker">
+                        <a href="#">
+                            <figure>
+                                <img class="activity_sticker_picture1" src="/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port"/>
+                                <figcaption class="activity_sticker_title">Vieux Port</figcaption>  
+                            </figure>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="activity_sticker">
-                    <a href="#">
-                        <figure>
-                            <img class="activity_sticker_picture2" src="/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues"/>
-                            <figcaption class="activity_sticker_title">Fort de Pomègues</figcaption>  
-                        </figure>
-                    </a>
+                <div class="activity_column">
+                    <div class="activity_sticker">
+                        <a href="#">
+                            <figure>
+                                <img class="activity_sticker_picture2" src="/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues"/>
+                                <figcaption class="activity_sticker_title">Fort de Pomègues</figcaption>  
+                            </figure>
+                        </a>
+                    </div>
+                    <div class="activity_sticker">
+                        <a href="#">
+                            <figure>
+                                <img class="activity_sticker_picture3" src="/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles du Frioul"/>
+                                <figcaption class="activity_sticker_title">Iles du Frioul</figcaption>  
+                            </figure>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="activity_sticker">
-                    <a href="#">
-                        <figure>
-                            <img class="activity_sticker_picture3" src="/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles du Frioul"/>
-                            <figcaption class="activity_sticker_title">Iles du Frioul</figcaption>  
-                        </figure>
-                    </a>
+                <div class="activity_column">
+                    <div class="activity_sticker">
+                        <a href="#">
+                            <figure>
+                                <img class="activity_sticker_picture1" src="/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques"/>
+                                <figcaption class="activity_sticker_title">Parc National des Calanques</figcaption>  
+                            </figure>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="activity_sticker">
-                    <a href="#">
-                        <figure>
-                            <img class="activity_sticker_picture1" src="/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques"/>
-                            <figcaption class="activity_sticker_title">Parc National des Calanques</figcaption>  
-                        </figure>
-                    </a>
-                </div>
-                
-                <div class="activity_sticker">
-                    <a href="#">
-                        <figure>
-                            <img class="activity_sticker_picture3" src="/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde"/>
-                            <figcaption class="activity_sticker_title">Notre-Dame-de-la-Garde</figcaption>  
-                        </figure>
-                    </a>
-                </div>                
-
-                <div class="activity_sticker">
-                    <a href="#">
-                        <figure>
-                            <img class="activity_sticker_picture2" src="/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp"/>
-                            <figcaption class="activity_sticker_title">Parc Longchamp</figcaption>  
-                        </figure>
-                    </a>
+                <div class="activity_column">
+                    <div class="activity_sticker">
+                        <a href="#">
+                            <figure>
+                                <img class="activity_sticker_picture3" src="/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde"/>
+                                <figcaption class="activity_sticker_title">Notre-Dame-de-la-Garde</figcaption>  
+                            </figure>
+                        </a>
+                    </div>                
+                    <div class="activity_sticker">
+                        <a href="#">
+                            <figure>
+                                <img class="activity_sticker_picture2" src="/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp"/>
+                                <figcaption class="activity_sticker_title">Parc Longchamp</figcaption>  
+                            </figure>
+                        </a>
+                    </div>
                 </div>
 
             </div>
@@ -304,6 +313,8 @@ integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg
         <!-- Pied de page -->
         <footer>
 
+
+            <!-- 1ère version
             <div class="footer_block">
                 <h3>A propos</h3>
                 <p>Fonctionnement du site</p>
@@ -322,6 +333,26 @@ integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg
                 <p>Centre d'aide</p>
                 <p>Nous contacter</p>
             </div>
+            -->
+
+            <ul class="footer_row">
+                <div class="footer_column">
+                    <li class="footer_title">A propos</li>
+                    <li><a href="#">Fonctionnement du site</a></li>
+                    <li><a href="#">Conditions générales de vente</a></li>
+                    <li><a href="#">Données et confidentialité</a></li>
+                </div>
+                <div class="footer_column">
+                    <li class="footer_title">Nos hébergements</li>
+                    <li><a href="#">Charte qualité</a></li>
+                    <li><a href="#">Soumettre votre hôtel</a></li>
+                </div>
+                <div class="footer_column">
+                    <li class="footer_title">Assistance</a></li>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                </div>
+            </ul>
 
         </footer>
 
