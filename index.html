@@ -3,6 +3,7 @@
 
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
 integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
@@ -17,20 +18,13 @@ integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg
             <img src="./images/logo/reservia.svg" alt="Logo Reservia" class="header_logo">
             <div class="header_blank"></div>
             <nav>
-                <ul>
+                <ul class="header_nav">
                     <li class="header_li"><a href="#hebergements">Hébergements</a></li>
                     <li class="header_li"><a href="#activites">Activités</a></li>
                 </ul>
             </nav>
             <a href="#" class="header_signup">S'inscrire</a>
         </header>
-
-        <!-- Duplication de HTML interdite
-        <nav class="mobile">
-            <a href="#hebergements" class="nav_mobile">Hébergements</a>
-            <a href="#activites" class="nav_mobile">Activités</a>
-        </nav>
-        -->
 
         <!-- Corps de la page -->
         <main>
@@ -45,8 +39,7 @@ integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg
                     <form class="search" method="GET" action="index.html">
                         <i class="search_icon fas fa-map-marker-alt"></i>
                         <input class="search_input" type="text" placeholder="Marseille, France" />
-                        <button class="search_button">Rechercher</button>
-                        <button class="search_button_mobile"><i class="loop fas fa-search"></i></button>
+                        <button class="search_button"><span class="no_loop">Rechercher</span><i class="loop fas fa-search"></i></button>
                     </form>
                 </div>
                 <div class="filters">
@@ -83,7 +76,7 @@ integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg
 
                 <div class="hosting_sticker">
                     <a href="#">
-                        <img class="hosting_sticker_picture" src="/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière"/>
+                        <img class="hosting_sticker_picture" src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière"/>
                         <h3 class="hosting_sticker_title">Auberge la Cannebière</h3>  
                         <p class="hosting_sticker_price">Nuit à partir de <span>25€</span></p>
                         <div class="stars">
@@ -98,7 +91,7 @@ integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg
 
                 <div class="hosting_sticker">
                     <a href="#">
-                        <img class="hosting_sticker_picture" src="/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port" />
+                        <img class="hosting_sticker_picture" src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port" />
                         <h3 class="hosting_sticker_title">Hôtel du port</h3>  
                         <p class="hosting_sticker_price">Nuit à partir de <span>52€</span></p>
                         <div class="stars">
@@ -113,7 +106,7 @@ integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg
 
                 <div class="hosting_sticker">
                     <a href="#">
-                        <img class="hosting_sticker_picture" src="/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les mouettes"/>
+                        <img class="hosting_sticker_picture" src="./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel les mouettes"/>
                         <h3 class="hosting_sticker_title">Hôtel les mouettes</h3>  
                         <p class="hosting_sticker_price">Nuit à partir de <span>76€</span></p>
                         <div class="stars">
@@ -128,7 +121,7 @@ integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg
 
                 <div class="hosting_sticker">
                     <a href="#">
-                        <img class="hosting_sticker_picture" src="/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer"/>
+                        <img class="hosting_sticker_picture" src="./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer"/>
                         <h3 class="hosting_sticker_title">Hôtel de la mer</h3>  
                         <p class="hosting_sticker_price">Nuit à partir de <span>46€</span></p>
                         <div class="stars">
@@ -143,7 +136,7 @@ integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg
 
                 <div class="hosting_sticker">
                     <a href="#">
-                        <img class="hosting_sticker_picture" src="/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le panier"/>
+                        <img class="hosting_sticker_picture" src="./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le panier"/>
                         <h3 class="hosting_sticker_title">Auberge le panier</h3>  
                         <p class="hosting_sticker_price">Nuit à partir de <span>23€</span></p>
                         <div class="stars">
@@ -158,7 +151,7 @@ integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg
 
                 <div class="hosting_sticker">
                     <a href="#">
-                        <img class="hosting_sticker_picture" src="/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina"/>
+                        <img class="hosting_sticker_picture" src="./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina"/>
                         <h3 class="hosting_sticker_title">Hôtel chez Amina</h3>  
                         <p class="hosting_sticker_price">Nuit à partir de <span>96€</span></p>
                         <div class="stars">
@@ -185,7 +178,7 @@ integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg
             <div class="popular_stickers">
 
                 <a  href="#" class="popular_sticker">
-                    <img class="popular_sticker_picture" src="/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin"/>
+                    <img class="popular_sticker_picture" src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hôtel Le soleil du matin"/>
                     <div class="popular_sticker_text">
                         <div>
                             <h3>Hôtel Le soleil du matin</h3>  
@@ -202,7 +195,7 @@ integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg
                 </a>
 
                 <a href="#" class="popular_sticker">
-                    <img class="popular_sticker_picture" src="/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes"/>
+                    <img class="popular_sticker_picture" src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au coeur de l'eau Chambres d'hôtes"/>
                     <div class="popular_sticker_text">
                         <div>
                             <h3>Au coeur de l'eau Chambres d'hôtes</h3>  
@@ -219,7 +212,7 @@ integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg
                 </a>
 
                 <a href="#" class="popular_sticker">
-                    <img class="popular_sticker_picture" src="/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et blanc"/>
+                    <img class="popular_sticker_picture" src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hôtel Tout bleu et blanc"/>
                     <div class="popular_sticker_text">
                         <div>
                             <h3>Hôtel Tout bleu et blanc</h3>  
@@ -249,7 +242,7 @@ integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg
                     <div class="activity_sticker">
                         <a href="#">
                             <figure>
-                                <img class="activity_sticker_picture1" src="/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port"/>
+                                <img class="activity_sticker_picture1" src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port"/>
                                 <figcaption class="activity_sticker_title">Vieux Port</figcaption>  
                             </figure>
                         </a>
@@ -260,7 +253,7 @@ integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg
                     <div class="activity_sticker">
                         <a href="#">
                             <figure>
-                                <img class="activity_sticker_picture2" src="/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues"/>
+                                <img class="activity_sticker_picture2" src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues"/>
                                 <figcaption class="activity_sticker_title">Fort de Pomègues</figcaption>  
                             </figure>
                         </a>
@@ -268,7 +261,7 @@ integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg
                     <div class="activity_sticker">
                         <a href="#">
                             <figure>
-                                <img class="activity_sticker_picture3" src="/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles du Frioul"/>
+                                <img class="activity_sticker_picture3" src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Iles du Frioul"/>
                                 <figcaption class="activity_sticker_title">Iles du Frioul</figcaption>  
                             </figure>
                         </a>
@@ -279,7 +272,7 @@ integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg
                     <div class="activity_sticker">
                         <a href="#">
                             <figure>
-                                <img class="activity_sticker_picture1" src="/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques"/>
+                                <img class="activity_sticker_picture1" src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques"/>
                                 <figcaption class="activity_sticker_title">Parc National des Calanques</figcaption>  
                             </figure>
                         </a>
@@ -290,7 +283,7 @@ integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg
                     <div class="activity_sticker">
                         <a href="#">
                             <figure>
-                                <img class="activity_sticker_picture3" src="/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde"/>
+                                <img class="activity_sticker_picture3" src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde"/>
                                 <figcaption class="activity_sticker_title">Notre-Dame-de-la-Garde</figcaption>  
                             </figure>
                         </a>
@@ -298,7 +291,7 @@ integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg
                     <div class="activity_sticker">
                         <a href="#">
                             <figure>
-                                <img class="activity_sticker_picture2" src="/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp"/>
+                                <img class="activity_sticker_picture2" src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp"/>
                                 <figcaption class="activity_sticker_title">Parc Longchamp</figcaption>  
                             </figure>
                         </a>
