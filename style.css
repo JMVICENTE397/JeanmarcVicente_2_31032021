@@ -50,13 +50,13 @@
     }
 
     h3 {
-        font-size: 1em;
+        font-size: 0.9em;
         font-weight: 900;
         margin-right: 20px;
     }
 
     figcaption {
-        font-size: 0.8em;
+        font-size: 0.9em;
         font-weight: 900;
         text-overflow: ellipsis;
     }
@@ -86,6 +86,10 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+
+    .header_logo {
+        max-height: 60px;
     }
 
     .header_nav {
@@ -463,8 +467,9 @@
     }
 
     .header_li {
-        padding: 18px 20px;
+        padding: 20px 20px;
         font-size: 0.9em;
+        border-top: solid 2px white;
     }
 
     .header_li:hover {
