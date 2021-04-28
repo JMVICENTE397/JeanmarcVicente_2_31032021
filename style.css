@@ -224,7 +224,7 @@
 
     /* Hébergement */
 
-    .hosting {
+    #hosting {
         padding: 30px;
     }
 
@@ -310,7 +310,7 @@
 
     /* Activités */
 
-    .activity {
+    #activity {
         margin: 30px;
     }
 
@@ -490,7 +490,7 @@
         flex-wrap: wrap;
     }
 
-    .hosting {
+    #hosting {
         flex: 60%;
         margin-top: 20px;
         margin-right: 30px;
