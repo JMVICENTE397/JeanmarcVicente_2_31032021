@@ -341,7 +341,6 @@
     /* Pied de page */
 
     footer {
-        padding: 30px 30px 0;
         background-color: #F2F2F2;
         font-size: 0.9em;
     }
@@ -355,9 +354,6 @@
         font-weight: bold;
     }
 
-    .footer_column {
-        margin-bottom: 30px;
-    }
 }
 
 /*************/
@@ -413,8 +409,9 @@
         margin-left: -8px;
     }
 
-    .no_loop {
-        display: none;
+    .search_button::after {
+        font-family: "font awesome 5 pro"  ;
+        content: "\f002";
     }
 
     .filters_title {
@@ -446,9 +443,13 @@
     }
 
     footer {
-        min-height: 400px;
         display: flex;
         flex-direction: column;
+        padding: 0 30px 30px;
+    }
+
+    .footer_column {
+        margin-top: 30px;
     }
 
 }
@@ -480,20 +481,21 @@
         color: #0065FC;
     }
 
-    i.fa-search {
-        display: none;
+    .search_button::after {
+        content: "Rechercher";
     }
 
     .hp {
         margin: 0 30px;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     #hosting {
-        flex: 60%;
+        flex: 58%;
+        max-width: 58%;
         margin-top: 20px;
-        margin-right: 30px;
         background-color: #F2F2F2;
         border-radius: 1em;
     }
@@ -509,7 +511,8 @@
     }
 
     .popular {
-        flex: 25%;
+        flex: 30%;
+        max-width: 30%;
         border-radius: 1em;
     }
 
@@ -540,19 +543,18 @@
 
     footer {
         margin-top: 50px;
-        padding: 30px;
+        padding: 0 30px 30px;
     }
 
     .footer_row {
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
-        height: 90px;
     }
 
     .footer_column {
-        flex: 33%;
-        max-width: 33%;
+        margin-top: 30px;
+        flex: 32%;
+        max-width: 32%;
     }
 
 }
