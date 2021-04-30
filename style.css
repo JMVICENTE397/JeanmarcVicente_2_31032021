@@ -32,32 +32,33 @@
 
     @font-face {
         font-family: Raleway;
-        src: url(polices/Raleway-Medium.ttf);
+        src: url(polices/Raleway-Regular.ttf);
     }
 
     body, footer {
-        font-family: Raleway, Arial, sans-serif;
+        font-family: Raleway-Regular, Arial, sans-serif;
     }
 
     h1 {
         font-size: 1.3em;
-        font-weight: 900;
+        font-weight: bold;
+        margin-bottom: 10px;
     }
 
     h2 {
         font-size: 1.2em;
-        font-weight: 900;
+        font-weight: bold;
     }
 
     h3 {
         font-size: 0.9em;
-        font-weight: 900;
+        font-weight: bold;
         margin-right: 20px;
     }
 
     figcaption {
         font-size: 0.9em;
-        font-weight: 900;
+        font-weight: 700;
         text-overflow: ellipsis;
     }
 
@@ -78,30 +79,19 @@
 
     /* En-tête */
 
-
-    /* Menu de navigation */
-
     header {
         margin-top: 2px;
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-between;
-    }
-
-    .header_logo {
-        max-height: 60px;
     }
 
     .header_nav {
         display: flex;
-        flex-wrap: wrap;
     }
 
     .header_blank {
         flex-grow: 4;
     }
-
-    /* Inscription */
 
     a.header_signup {
         color: #0065FC;
@@ -122,21 +112,22 @@
         margin: 30px 30px 0;
         display:flex;
         justify-content: flex-start;
+        align-items: center;
     }
 
     .search_icon {
         background-color: #F2F2F2;
         border: solid 1px #F2F2F2;
-        border-radius: 8px 0 0 8px;
+        border-radius: 10px 0 0 10px;
         font-size: 0.9em;
         padding: 0.8em;
     }
 
     .search_input {
-        font-size: 0.8em;
+        font-size: 0.9em;
         font-weight: bold;
         border: solid 1px #F2F2F2;
-        padding: 0.8em;
+        padding: 0.7em;
     }
 
     .search_button {
@@ -145,7 +136,7 @@
         color: white;
         background-color: #0065FC;
         border: solid 1px #0065FC;
-        border-radius: 0 8px 8px 0;
+        border-radius: 0 10px 10px 0;
         padding: 0.8em;
     }
 
@@ -187,7 +178,7 @@
     .filter_name {
         margin: 0 22px 0 -2.8em;
         font-size: 0.8em;
-        font-weight: 900;
+        font-weight: 700;
         border: solid 1px #F2F2F2;
         border-radius: 1.6em;
         padding: 0.8em 1em 0.8em 3.6em;
@@ -364,7 +355,7 @@
 
 
     header {
-        margin: 10px 30px;
+        margin: 10px 0;
         display: flex;
         flex-wrap: wrap;
     }
@@ -374,7 +365,8 @@
         flex: 100%;
     }
 
-    .header_nav {
+    .header_logo {
+        padding: 0 30px;
     }
 
     .header_li {
@@ -461,7 +453,8 @@
 @media all and (min-width: 668px) {
 
     header {
-        margin: 2px 30px 10px;
+        margin: 2px 0 10px;
+        padding: 0 30px;
         display: flex;
         justify-content: space-between;
         align-items: center;
