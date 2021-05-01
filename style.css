@@ -220,7 +220,6 @@
     }
 
     .hosting_sticker {
-        margin-top: 30px;
         background-color: white;
         box-shadow: 0 0 5px grey;
         padding: 5px;
@@ -248,8 +247,7 @@
 
     /* Populaires */
 
-    .popular {
-        margin-top: 20px;
+    #popular {
         padding: 30px;
         background-color: #F2F2F2;
     }
@@ -259,21 +257,13 @@
         justify-content: space-between;
     }
 
-    .popular_stickers {
-        display: flex;
-        flex-direction: column;
-    }
-
     .popular_sticker {
         margin-top: 30px;
         background-color: white;
         box-shadow: 0 0 5px grey;
         padding: 5px;
         border-radius: 1em;
-        height: 8em;
         display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
     }
 
     .popular_sticker:hover {
@@ -282,7 +272,6 @@
 
     .popular_sticker_picture {
         width: 35%;
-        height: 8em;
         object-fit: cover;
         border-radius: 0.8em 0 0 0.8em;
     }
@@ -351,8 +340,7 @@
 /* I-PHONE 8 */
 /*************/
 
-@media all and (max-width: 667px) {
-
+@media all and (max-width: 668px) {
 
     header {
         margin: 10px 0;
@@ -411,6 +399,7 @@
     }
 
     .hp {
+        margin-top: 30px;
         display: flex;
         flex-direction: column-reverse;
     }
@@ -418,6 +407,14 @@
     .hosting_stickers {
         display: flex;
         flex-direction: column;
+    }
+
+    .hosting_sticker {
+        margin-top: 30px;
+    }
+
+    .popular_sticker, .popular_sticker_picture {
+        height: 8em;
     }
 
     .activity_column {
@@ -442,15 +439,16 @@
 
     .footer_column {
         margin-top: 30px;
+        flex: 100%;
     }
 
 }
 
-/*********************/
-/* DESKTOP & TABLETS */
-/*********************/
+/***********/
+/* TABLET */
+/***********/
 
-@media all and (min-width: 668px) {
+@media all and (min-width: 669px) and (max-width: 1024px) {
 
     header {
         margin: 2px 0 10px;
@@ -479,16 +477,14 @@
     }
 
     .hp {
-        margin: 0 30px;
+        margin: 0 20px;
         display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
     }
 
     #hosting {
-        flex: 58%;
-        max-width: 58%;
-        margin-top: 20px;
+        margin: 20px 10px 0;
+        flex: 65%;
+        max-width: 65%;
         background-color: #F2F2F2;
         border-radius: 1em;
     }
@@ -496,17 +492,25 @@
     .hosting_stickers {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        margin: 20px -2% 0;
+        justify-content: center;
     }
 
     .hosting_sticker {
-        width: 29%;
+        flex: 43%;
+        max-width: 43%;
+        margin: 2%;
     }
 
-    .popular {
-        flex: 30%;
-        max-width: 30%;
+    #popular {
+        margin: 20px 10px 0;
+        flex: 35%;
+        max-width: 35%;
         border-radius: 1em;
+    }
+
+    .popular_sticker, .popular_sticker_picture {
+        height: 12em;
     }
 
     .activity_row {
@@ -546,8 +550,120 @@
 
     .footer_column {
         margin-top: 30px;
-        flex: 32%;
-        max-width: 32%;
+        flex: 33%;
+        max-width: 33%;
+    }
+
+}
+
+/***********/
+/* DESKTOP */
+/***********/
+
+@media all and (min-width: 1025px) {
+
+    header {
+        margin: 2px 0 10px;
+        padding: 0 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header_li {
+        padding: 20px 20px;
+        font-size: 0.9em;
+        border-top: solid 2px white;
+    }
+
+    .header_li:hover {
+        border-top: solid 2px #0065FC;
+    }
+
+    header a:hover {
+        color: #0065FC;
+    }
+
+    .search_button::after {
+        content: "Rechercher";
+    }
+
+    .hp {
+        margin: 0 20px;
+        display: flex;
+    }
+
+    #hosting {
+        margin: 20px 10px 0;
+        flex: 58%;
+        max-width: 58%;
+        background-color: #F2F2F2;
+        border-radius: 1em;
+    }
+
+    .hosting_stickers {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px -1.5% 0;
+        justify-content: center;
+    }
+
+    .hosting_sticker {
+        flex: 28.5%;
+        max-width: 28.5%;
+        margin: 1.5%;
+    }
+
+    #popular {
+        margin: 20px 10px 0;
+        flex: 30%;
+        max-width: 30%;
+        border-radius: 1em;
+    }
+
+    .popular_sticker, .popular_sticker_picture {
+        height: 8em;
+    }
+
+    .activity_row {
+        height: 380px;
+        margin: 0 -1%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .activity_column {
+        flex: 23%;
+        max-width: 23%;
+        padding: 1%;
+    }
+
+    .activity_sticker_picture1 {
+        height: 20em;
+    }
+
+    .activity_sticker_picture2 {
+        height: 10em;
+    }
+
+    .activity_sticker_picture3 {
+        height: 6.3em;
+    }
+
+    footer {
+        margin-top: 50px;
+        padding: 0 30px 30px;
+    }
+
+    .footer_row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer_column {
+        margin-top: 30px;
+        flex: 33%;
+        max-width: 33%;
     }
 
 }
