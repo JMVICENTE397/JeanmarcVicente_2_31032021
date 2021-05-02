@@ -28,6 +28,10 @@
         list-style: none;
     }
 
+    button {
+        border: none;
+    }
+
     /* POLICES */
 
     @font-face {
@@ -117,27 +121,29 @@
 
     .search_icon {
         background-color: #F2F2F2;
-        border: solid 1px #F2F2F2;
+        /* border: solid 1px #F2F2F2; */
+        /* warning : color et border sont de la même couleur */
         border-radius: 10px 0 0 10px;
         font-size: 0.9em;
-        padding: 0.8em;
+        padding: 0.9em;
     }
 
     .search_input {
         font-size: 0.9em;
         font-weight: bold;
-        border: solid 1px #F2F2F2;
+        border: solid 0.1em #F2F2F2;
         padding: 0.7em;
     }
 
     .search_button {
-        font-size: 0.8;
+        font-size: 0.9em;
         font-weight: bold;
         color: white;
         background-color: #0065FC;
-        border: solid 1px #0065FC;
+        /* border: solid 1px #0065FC; */
+        /* warning : color et border sont de la même couleur */
         border-radius: 0 10px 10px 0;
-        padding: 0.8em;
+        padding: 0.78em;
     }
 
     /* Filtres */
@@ -152,12 +158,13 @@
 
     .filters_title {
         margin-top: 10px;
-        font-weight: 0.9em;
+        font-weight: bold;
     }
 
     .filter {
         display: flex;
         justify-content: flex-start;
+        align-items: center;
         margin-top: 10px;
     }
 
@@ -171,7 +178,7 @@
         color: #0065FC;
         background-color: #DEEBFF;
         border-radius: 2em;
-        padding: 0.7em;
+        padding: 0.6em;
         z-index: 100;
     }
 
@@ -179,15 +186,16 @@
         margin: 0 22px 0 -2.8em;
         font-size: 0.8em;
         font-weight: 700;
-        border: solid 1px #F2F2F2;
+        border: solid 0.1em #F2F2F2;
         border-radius: 1.6em;
-        padding: 0.8em 1em 0.8em 3.6em;
+        padding: 0.9em 1em 0.8em 3.6em;
     }
 
     .filter_name:hover {
         color: white;
         background-color: #0065FC;
-        border: solid 1px #0065FC;
+        /* border: solid 1px #0065FC; */
+        /* warning : color et border sont de la même couleur */
     }
 
     /* Résultat */
@@ -337,10 +345,10 @@
 }
 
 /*************/
-/* I-PHONE 8 */
+/* MOBILE */
 /*************/
 
-@media all and (max-width: 668px) {
+@media all and (max-width: 767px) {
 
     header {
         margin: 10px 0;
@@ -448,7 +456,7 @@
 /* TABLET */
 /***********/
 
-@media all and (min-width: 669px) and (max-width: 1024px) {
+@media all and (min-width: 768px) and (max-width: 1023px) {
 
     header {
         margin: 2px 0 10px;
@@ -560,7 +568,7 @@
 /* DESKTOP */
 /***********/
 
-@media all and (min-width: 1025px) {
+@media all and (min-width: 1024px) {
 
     header {
         margin: 2px 0 10px;
