@@ -83,7 +83,7 @@
 
     /* En-tête */
 
-    header {
+    .header_first_line {
         margin-top: 2px;
         display: flex;
         justify-content: space-between;
@@ -350,7 +350,7 @@
 
 @media all and (max-width: 767px) {
 
-    header {
+    .header_first_line {
         margin: 10px 0;
         display: flex;
         flex-wrap: wrap;
@@ -458,7 +458,7 @@
 
 @media all and (min-width: 768px) and (max-width: 1023px) {
 
-    header {
+    .header_first_line {
         margin: 2px 0 10px;
         padding: 0 30px;
         display: flex;
@@ -570,7 +570,7 @@
 
 @media all and (min-width: 1024px) {
 
-    header {
+    .header_first_line {
         margin: 2px 0 10px;
         padding: 0 30px;
         display: flex;

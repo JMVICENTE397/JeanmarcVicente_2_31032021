@@ -13,59 +13,67 @@ integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg
 
     <body>
        
-        <!-- En-tête avec logo, menu de navigation et bouton d'inscription -->
         <header>
-            <img src="./images/logo/Reservia.svg" alt="Logo Reservia" class="header_logo">
-            <div class="header_blank"></div>
-            <nav>
-                <ul class="header_nav">
-                    <li class="header_li"><a href="#hosting">Hébergements</a></li>
-                    <li class="header_li"><a href="#activity">Activités</a></li>
-                </ul>
-            </nav>
-            <a href="#" class="header_signup">S'inscrire</a>
+    
+            <!-- En-tête avec logo, menu de navigation et bouton d'inscription -->
+            <div class="header_first_line">
+                <img src="./images/logo/Reservia.svg" alt="Logo Reservia" class="header_logo">
+                <div class="header_blank"></div>
+                <nav>
+                    <ul class="header_nav">
+                        <li class="header_li"><a href="#hosting">Hébergements</a></li>
+                        <li class="header_li"><a href="#activity">Activités</a></li>
+                    </ul>
+                </nav>
+                <a href="#" class="header_signup">S'inscrire</a>
+            </div>
+            
+            <!-- Pitch -->
+            <div class="pitch">
+                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
+            </div>
+
+            <!-- Moteur de recherche -->
+            <div>
+                <form class="search" method="GET" action="index.html">
+                    <i class="search_icon fas fa-map-marker-alt"></i>
+                    <input class="search_input" type="text" placeholder="Marseille, France" />
+                    <button class="search_button"></button>
+                </form>
+            </div>
+                
+            <!-- Filtres -->
+            <div class="filters">
+                <h3 class="filters_title">Filtres</h3>
+                <div class="filter">
+                    <div class="filter_icon"><i class="fas fa-money-bill-wave"></i></div>
+                    <div class="filter_name">Economique</div>
+                </div>
+                <div class="filter">
+                    <div class="filter_icon"><i class="fas fa-child"></i></div>
+                    <div class="filter_name">Familial</div>
+                </div>
+                <div class="filter">
+                    <div class="filter_icon"><i class="fas fa-heart"></i></div>
+                    <div class="filter_name">Romantique</div>
+                </div>
+                <div class="filter">
+                    <div class="filter_icon"><i class="fas fa-dog"></i></div>
+                    <div class="filter_name">Animaux autorisés</div>
+                </div>
+            </div>
+
+            <!-- Résultat de recherche -->
+            <div class="result">
+                <div class="result_icon"><i class="fas fa-info"></i></div>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
+            </div>
+
         </header>
 
         <!-- Corps de la page -->
         <main>
-            
-            <!-- Pitch + moteur de recherche + filtres -->
-            <section>
-                <div class="pitch">
-                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                    <p>En plein centre ville ou en pleine nature</p>
-                </div>
-                <div>
-                    <form class="search" method="GET" action="index.html">
-                        <i class="search_icon fas fa-map-marker-alt"></i>
-                        <input class="search_input" type="text" placeholder="Marseille, France" />
-                        <button class="search_button"></button>
-                    </form>
-                </div>
-                <div class="filters">
-                    <h3 class="filters_title">Filtres</h3>
-                    <div class="filter">
-                        <div class="filter_icon"><i class="fas fa-money-bill-wave"></i></div>
-                        <div class="filter_name">Economique</div>
-                    </div>
-                    <div class="filter">
-                        <div class="filter_icon"><i class="fas fa-child"></i></div>
-                        <div class="filter_name">Familial</div>
-                    </div>
-                    <div class="filter">
-                        <div class="filter_icon"><i class="fas fa-heart"></i></div>
-                        <div class="filter_name">Romantique</div>
-                    </div>
-                    <div class="filter">
-                        <div class="filter_icon"><i class="fas fa-dog"></i></div>
-                        <div class="filter_name">Animaux autorisés</div>
-                    </div>
-                </div>
-                <div class="result">
-                    <div class="result_icon"><i class="fas fa-info"></i></div>
-                    <p>Plus de 500 logements sont disponibles dans cette ville</p>
-                </div>
-            </section>
 
         <div class="hp">
 
